@@ -6,19 +6,19 @@
 
 > 基本的环境可以与WRF，CESM一同搭建
 
-进入MPAS的源码包，找到并打开Makefile。可以发现Makefile中列出了很多编译选项，笔者使用ifort与icc。MPAS的编译选择主要是利用下面这个格式：<br/>
-`make compiler CORE=core`<br/>
-compiler：使用什么编译器，目前支持ifort，gfortran，xlf，pgi<br/>
-core=用户需要什么类型的动力框架，目前选择有：atmosphere，init_atmosphere，landice，ocean，sw，test<br/>
-笔者这里编译两个：<br/>
-`make ifort CORE=atmosphere`<br/>
+进入MPAS的源码包，找到并打开Makefile。可以发现Makefile中列出了很多编译选项，笔者使用ifort与icc。MPAS的编译选择主要是利用下面这个格式：
+`make compiler CORE=core`
+compiler：使用什么编译器，目前支持ifort，gfortran，xlf，pgi
+core=用户需要什么类型的动力框架，目前选择有：atmosphere，init_atmosphere，landice，ocean，sw，test
+笔者这里编译两个：
+`make ifort CORE=atmosphere`
 `make ifort CORE=init_atmosphere`
 
 ## 编译METIS
 > METIS可以用于加密网格，即让MPAS在某个区域网格分辨率提升，而其他地区网格分辨率保持不变。
 
-直接进入目录，修改Makefile中的编译器选项，然后使用命令：<br/>
-`make`<br/>
+直接进入目录，修改Makefile中的编译器选项，然后使用命令：
+`make`
 进行编译。当然，METIS的运行比较耗费资源，MPAS的官网也给出了若干已经处理好的加密网格，只需要做次旋转平移，将加密的位置旋转平移到目标位置即可。
 
 ## 运行
