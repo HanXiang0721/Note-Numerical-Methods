@@ -318,3 +318,7 @@ echo job end at `date` >> $DIR/SYSOUT
 |  TEND  |         length of time integration in day         |
 
 模式的运行只需要执行这个脚本即可。当然，也可以把这个脚本用bash，python，perl等等语言改写。。。
+
+
+
+PS：LBM是线性模式，所以刚开始积分的时候得到的是大气的第一响应，后面积分中，非线性性会起作用，导致结果失去意义。一般情况下，线性模式只看前20天左右的积分结果。
