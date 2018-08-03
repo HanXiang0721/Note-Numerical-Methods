@@ -807,3 +807,10 @@ outfile->q = q_out
 outfile->pres = pres_out
 ```
 
+
+
+# 备忘
+
+最好使用intel编译器。利用gfortran其实也可以编译。但是这里会产生一个问题，就是在编译`$LNHOME/model/src/sysdep/yN000.F`时，会报“idate”，“itime”之类的函数没找到。这些函数其实是fortran的内置函数，但是在yN000.F里被声明为EXTERNAL，只需要把源程序中的EXTERNAL改为INTRINSIC就能够编译通过
+
+intel编译器的big endian编译选项为-convert big_endian，而GNU的为-convert=big-endian，编译时注意别写错了
