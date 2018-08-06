@@ -210,13 +210,13 @@ make lbm
 |   ops    |                是否用Ps forcing？是用t，否用f                |
 |   osph   |             是否用humidity forcing？是用t，否用f             |
 |   khpr   |   horizontal shape of forcing: 1.elliptic, 2.zonal uniform   |
-|   hamp   |                 如果填1，amplitude in 1/day                  |
+|   hamp   |                      amplitude in 1/day                      |
 |   xdil   |              zonal extent from center longitude              |
 |   ydil   |            meridional extent from center latitude            |
 |   xcnt   |                   center longitude, 0-360                    |
 |   ycnt   |                   center latitude, -90~90                    |
 |   kvpr   | vertical profile of forcing: 1: sinusoidal, 2: gamma, 3: uniform |
-|   vamp   |                 如果填1，amplitude in 1/day                  |
+|   vamp   |                      amplitude in 1/day                      |
 |   vdil   |             dilation parameter, only for kvpr=2              |
 |   vcnt   |                    center level in sigma                     |
 |  owall   |                      full matrix or PWM                      |
