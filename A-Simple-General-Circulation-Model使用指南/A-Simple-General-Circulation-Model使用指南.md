@@ -11,3 +11,9 @@ make nupdate
 
 ![](./001.png)
 
+不过这样编译出来的总有问题，所以说还有种办法，就是直接用网上提供的二进制文件：
+
+<http://www.met.reading.ac.uk/~jeff/nupdate/>
+
+# 编译
+
