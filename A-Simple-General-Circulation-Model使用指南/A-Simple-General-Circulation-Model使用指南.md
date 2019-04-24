@@ -17,3 +17,5 @@ make nupdate
 
 # 编译
 
+直接运行jobs目录下run.sh即可
+
